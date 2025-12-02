@@ -74,4 +74,6 @@ div.stButton > button {
 st.markdown("<div class=\"title\">🍴 LETS LUNCH!</div>", unsafe_allow_html=True)
 
 # Centered GO! button
-if st.button("Generate Lunch"): lunch_choice = random.choice(LUNCH_IDEAS) st.markdown(f'{lunch_choice}', unsafe_allow_html=True)
+if st.button("Whats for lunch? CLICK"):
+    lunch_choice = random.choice(LUNCH_IDEAS)
+    st.markdown(f'<div class="lunch-box">{lunch_choice}</div>', unsafe_allow_html=True)
