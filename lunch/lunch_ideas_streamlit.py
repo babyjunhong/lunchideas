@@ -66,10 +66,10 @@ st.markdown("""
 </style></div>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="title">🍴 LET'S LUNCH!</div>', unsafe_allow_html=True)
+st.markdown('<div class="title">🍴 LETS LUNCH!</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-title">🍴 점심 먹자!</div>', unsafe_allow_html=True)
 
 # Center button
-if st.button("Let's lunch!"):
+if st.button("Lets lunch!"):
     lunch_choice = random.choice(LUNCH_IDEAS)
     st.markdown(f'<div class="lunch-box">{lunch_choice}</div>', unsafe_allow_html=True)
