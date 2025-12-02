@@ -30,16 +30,23 @@ LUNCH_IDEAS = [
 # ----- Streamlit Interface -----
 # Custom CSS for button and font
 st.markdown("""
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-.stButton>button {
-    width: 200px !important;
-    height: 50px;
-    background-color: #FFC0CB;
-    color: black;
-    font-size: 18px;
-    font-family: 'Roboto Condensed', sans-serif;
-}
+<div style="text-align: center;">
+    <button style="
+        width: 200px;
+        height: 50px;
+        background-color: #FFC0CB;
+        color: black;
+        font-size: 18px;
+        font-family: 'Roboto Condensed', sans-serif;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    ">
+        Let's lunch!
+    </button>
+</div>
+""", unsafe_allow_html=True)
+
 .title {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 48px;
