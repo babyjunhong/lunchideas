@@ -30,23 +30,18 @@ LUNCH_IDEAS = [
 # ----- Streamlit Interface -----
 # Custom CSS for button and font
 st.markdown("""
-<div style="text-align: center;">
-    <button style="
-        width: 200px;
-        height: 50px;
-        background-color: #FFC0CB;
-        color: black;
-        font-size: 18px;
-        font-family: 'Roboto Condensed', sans-serif;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-    ">
-        Let's lunch!
-    </button>
-</div>
-""", unsafe_allow_html=True)
-
+st.markdown("""
+<style>
+div.stButton > button {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    background-color: #FFC0CB;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 .title {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 48px;
@@ -73,7 +68,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("<div class=\"title\">🍴 LET'S LUNCH!</div>", unsafe_allow_html=True)
+st.markdown('<div class="title">🍴 LET'S LUNCH!</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-title">🍴 점심 먹자!</div>', unsafe_allow_html=True)
 
 # Center button
