@@ -30,12 +30,10 @@ LUNCH_IDEAS = [
 # ----- Streamlit Interface -----
 # Custom CSS for button and font
 st.markdown("""
-st.markdown("""
-<style>
-div.stButton > button {
-    display: block;
-    margin: 0 auto;
-    width: 200px;
+<style><div style="text-align: center;">
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+.stButton>button {
+    width: 200px !important;
     height: 50px;
     background-color: #FFC0CB;
     color: black;
@@ -65,13 +63,13 @@ div.stButton > button {
     background-color: #FFDEE9;
     border-radius: 10px;
 }
-</style>
+</style></div>
 """, unsafe_allow_html=True)
 
 st.markdown('<div class="title">🍴 LET'S LUNCH!</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-title">🍴 점심 먹자!</div>', unsafe_allow_html=True)
 
 # Center button
-if st.button("Lets lunch!"):
+if st.button("Let's lunch!"):
     lunch_choice = random.choice(LUNCH_IDEAS)
     st.markdown(f'<div class="lunch-box">{lunch_choice}</div>', unsafe_allow_html=True)
