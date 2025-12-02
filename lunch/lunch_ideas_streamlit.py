@@ -4,23 +4,23 @@ import streamlit as st
 # ----- List of 100 Lunch Ideas (Singapore / Chinatown) -----
 LUNCH_IDEAS = [
     "Chicken Rice", "Laksa", "Char Kway Teow", "Hainanese Pork Chop", "Bak Kut Teh",
-    "Wanton Mee", "Chilli Crab", "Fish Head Curry", "Nasi Lemak", "Roti Prata",
-    "Mee Goreng", "Fried Hokkien Mee", "Beef Hor Fun", "Satay", "Yong Tau Foo",
+    "Wanton Mee", "Yam Rice", "Fish Head Curry", "Nasi Lemak", "Roti Prata",
+    "Mee Goreng", "Fried Hokkien Mee", "Beef Hor Fun", "Satay Beehoon", "Yong Tau Foo",
     "Bak Chor Mee", "Claypot Chicken Rice", "Curry Chicken Bee Hoon", "Braised Duck", "Fried Carrot Cake",
-    "Sambal Stingray", "Popiah", "Mee Siam", "Fried Oyster Omelette", "Kway Chap",
-    "Teochew Porridge", "Chwee Kueh", "Hokkien Mee", "Lor Mee", "Roast Duck",
-    "Curry Puff", "Chicken Curry", "Fried Bee Hoon", "Mee Rebus", "Chap Chye",
+    "Sambal Stingray", "Macdonald", "Mee Siam",
+    "Teochew Porridge", "CHAGEE", "Hokkien Mee", "Lor Mee", "Roast Duck",
+    "Curry Puff", "Chicken Curry Rice", "Fried Bee Hoon", "Mee Rebus"
     "Rojak", "Kway Teow Soup", "Nasi Padang", "Fried Rice", "Claypot Tofu",
     "Fried Fish", "Braised Pork Belly", "Popiah Goreng", "Mee Soto", "Dry Mee Siam",
     "Vegetarian Bee Hoon", "Fish Soup", "Prawn Mee", "Kway Teow Char", "Rendang Chicken",
-    "Mee Pok", "Kolo Mee", "Bak Kut Teh Soup", "Oyster Mee Hoon", "Fried Noodles",
-    "Fried Rice Vermicelli", "Sliced Fish Soup", "Curry Fish Head", "Chicken Satay", "Laksa Soup",
+    "Mee Pok", "Bread", "Bak Kut Teh Soup", "Oyster Mee Hoon", "Fried Noodles",
+    "Fried Rice Vermicelli", "Sliced Fish Soup", "Curry Fish Head", "Fried bananas", "Laksa Soup",
     "Prawn Omelette", "Grilled Stingray", "Sambal Chicken", "Fried Wanton", "Mee Hoon Soup",
-    "Yam Ring", "Fried Chicken Cutlet", "Braised Beef Brisket", "Curry Vegetable", "Steamed Fish",
+    "Yam Ring", "Fried Chicken Cutlet", "Braised Beef Brisket", "Curry Vegetable", "KFC",
     "Roast Pork", "Black Pepper Chicken", "Fried Tofu", "Popiah Salad", "Curry Squid",
-    "Singapore Fried Mee Tai Mak", "Fried Carrot Cake Black", "Chicken Satay Skewers", "Sweet and Sour Fish",
+    "Singapore Fried Mee Tai Mak", "Fried Carrot Cake Black", "Burger King", "Sweet and Sour Fish",
     "BBQ Pork Char Siew", "Dim Sum Platter", "Fried Prawn Roll", "Fried Rice with Salted Egg", "Nasi Goreng Kampung",
-    "Fried Chicken Wings", "Claypot Laksa", "Chilli Pan Mee", "Spicy Tofu", "Mee Soto Ayam",
+    "Fried Chicken Wings", "Claypot Laksa", "Chilli Pan Mee", "Order from GRAB", "Mee Soto Ayam",
     "Curry Mee", "Seafood Hor Fun", "Roti John", "Beef Rendang", "Mee Hoon Kway",
     "Vegetarian Curry", "Fried Hokkien Prawn Mee", "Roast Chicken", "Fish Ball Noodles", "Mee Pok Dry"
 ]
