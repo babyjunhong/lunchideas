@@ -1,5 +1,3 @@
-# lunch_ideas_streamlit.py
-
 import random
 import streamlit as st
 
@@ -28,18 +26,24 @@ LUNCH_IDEAS = [
 ]
 
 # ----- Streamlit Interface -----
-# Custom CSS for button and font
+# Custom CSS for button, font, and lunch box
 st.markdown("""
-<style><div style="text-align: center;">
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-.stButton>button {
-    width: 200px !important;
+
+/* Center button */
+div.stButton > button {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
     height: 50px;
     background-color: #FFC0CB;
     color: black;
     font-size: 18px;
     font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 5px;
 }
+
 .title {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 48px;
@@ -63,13 +67,14 @@ st.markdown("""
     background-color: #FFDEE9;
     border-radius: 10px;
 }
-</style></div>
+</style>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="title">🍴 LETS LUNCH!</div>', unsafe_allow_html=True)
-st.markdown('<div class="sub-title">🍴 점심 먹자!</div>', unsafe_allow_html=True)
+# Titles
+st.markdown("<div class=\"title\">🍴 LET&apos;S LUNCH!</div>", unsafe_allow_html=True)
+st.markdown("<div class=\"sub-title\">🍴 점심 먹자!</div>", unsafe_allow_html=True)
 
-# Center button
-if st.button("Lets lunch!"):
-lunch_choice = random.choice(LUNCH_IDEAS)
-st.markdown(f'<div class="lunch-box">{lunch_choice}</div>', unsafe_allow_html=True)
+# Centered GO! button
+if st.button("Let's lunch!"):
+    lunch_choice = random.choice(LUNCH_IDEAS)
+    st.markdown(f'<div class="lunch-box">{lunch_choice}</div>', unsafe_allow_html=True)
