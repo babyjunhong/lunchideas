@@ -74,7 +74,18 @@ div.stButton > button {
 st.markdown("<div class=\"title\">🍴 LET&apos;S LUNCH!</div>", unsafe_allow_html=True)
 st.markdown("<div class=\"sub-title\">🍴 점심 먹자!</div>", unsafe_allow_html=True)
 
-# Centered GO! button
-if st.button("Let's lunch!"):
-    lunch_choice = random.choice(LUNCH_IDEAS)
-    st.markdown(f'<div class="lunch-box">{lunch_choice}</div>', unsafe_allow_html=True)
+# Button (HTML version)
+st.markdown("""
+<div class='button-container'>
+    <button class='lunch-button' onclick="window.dispatchEvent(new CustomEvent('button_click'));">Let's lunch!</button>
+</div>
+""", unsafe_allow_html=True)
+
+# Detect click using Streamlit events
+if st.button("Generate Lunch") or st.session_state.clicked:
+    st.session_state.clicked = True
+    st.session_state.choice = random.choice(LUNCH_IDEAS)
+
+# Display lunch choice
+if st.session_state.choice:
+    st.markdown(f"<div class='lunch-box'>{st.session_state.choice}</div>", unsafe_allow_html=True)
