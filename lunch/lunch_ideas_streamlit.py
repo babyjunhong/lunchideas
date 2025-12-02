@@ -71,4 +71,3 @@ st.markdown('<div class="sub-title">🍴 점심 먹자!</div>', unsafe_allow_htm
 
 # Center button
 if st.button("Let's lunch!"): lunch_choice = random.choice(LUNCH_IDEAS) st.markdown(f'{lunch_choice}', unsafe_allow_html=True)
-
